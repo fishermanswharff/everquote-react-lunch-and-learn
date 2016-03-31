@@ -1,0 +1,48 @@
+# Getting Started
+
+**Dependencies:**
+Make sure you have node and npm installed (npm comes installed with node).
+[Node via download][node-download] *OR* Node via Homebrew: `brew install node` (requires Homebrew)
+
+To see if you have node and npm:
+```bash
+$ node -v
+v5.0.0 # should see something like this
+$ npm -v
+3.8.3 # should see something like this
+```
+
+**Installing**
+```bash
+$ git clone git@github.com:fishermanswharff/everquote-react-lunch-and-learn.git
+$ cd everquote-react-lunch-and-learn
+$ npm install
+$ gulp serve
+```
+
+# Step 1: Hello World
+
+
+
+
+
+# Helpful links:
+
+* [MDN Javascript Classes documentation][mdn-es6-classes]
+* [MDN ES6 Promises][mdn-es6-promises]
+* [React Homepage][react-home-link]
+* [React Docs][react-docs-link]
+* [Firebase Docs][firebase-js-docs]
+* [Jasmine Docs][jasmine-docs]
+* [Beginner’s Guide to Webpack][webpack-medium-post]
+* [Gulp: Getting Started][gulp-getting-started]
+
+[mdn-es6-classes]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes
+[react-home-link]: https://facebook.github.io/react/index.html
+[react-docs-link]: https://facebook.github.io/react/docs/getting-started.html
+[jasmine-docs]: http://jasmine.github.io/2.4/introduction.html
+[firebase-js-docs]: https://www.firebase.com/docs/web/api/
+[webpack-medium-post]: https://medium.com/@dabit3/beginner-s-guide-to-webpack-b1f1a3638460
+[gulp-getting-started]: https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md
+[node-download]: https://nodejs.org/en/download/
+[mdn-es6-promises]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise
