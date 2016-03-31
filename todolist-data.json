@@ -1,0 +1,120 @@
+{
+  "lists" : {
+    "-JkFDJYGJ0YmKNzHwlAi" : {
+      "name" : "Chores",
+      "timestamp" : 1456367565709
+    },
+    "-Jr84-HVjMn_CNFGeaHA" : {
+      "name" : "Groceries 🍽",
+      "timestamp" : 1456367565709
+    },
+    "-KDH-kM1HUCJxzapXPxO" : {
+      "name" : "React Lunch and Learn",
+      "timestamp" : 1456367565709
+    }
+  },
+  "todos" : {
+    "-JkFDJYGJ0YmKNzHwlAi" : {
+      "-K4j3p_ER792ugI8N4oA" : {
+        "done" : false,
+        "project" : "-JkFDJYGJ0YmKNzHwlAi",
+        "text" : "Walk the dog",
+        "timestamp" : 1449267517851
+      },
+      "-KBZRRCDDhFng3OGZkPK" : {
+        "done" : true,
+        "project" : "-JkFDJYGJ0YmKNzHwlAi",
+        "text" : "Do Taxes",
+        "timestamp" : 1456605348737
+      },
+      "-KBcstZYhegnSidF4-ui" : {
+        "done" : false,
+        "project" : "-JkFDJYGJ0YmKNzHwlAi",
+        "text" : "Cook Dinner",
+        "timestamp" : 1456679918111
+      },
+      "-KBzSlTxPUmrZZcYj_ex" : {
+        "done" : false,
+        "project" : "-JkFDJYGJ0YmKNzHwlAi",
+        "text" : "Grocery Shopping",
+        "timestamp" : 1457058682878
+      }
+    },
+    "-Jr84-HVjMn_CNFGeaHA" : {
+      "-KDyjgDitRSb503aF4Sh" : {
+        "done" : true,
+        "project" : "-Jr84-HVjMn_CNFGeaHA",
+        "text" : "Kale",
+        "timestamp" : 1459194086458
+      },
+      "-KDyjhLPTxUmDZTYpJ8U" : {
+        "done" : true,
+        "project" : "-Jr84-HVjMn_CNFGeaHA",
+        "text" : "Pineapple",
+        "timestamp" : 1459194091066
+      },
+      "-KDyjn8Jrrl5DweUJMDc" : {
+        "done" : false,
+        "project" : "-Jr84-HVjMn_CNFGeaHA",
+        "text" : "Dates",
+        "timestamp" : 1459194114770
+      }
+    },
+    "-KDH-kM1HUCJxzapXPxO" : {
+      "-KDH-quoyli2S0JIfCWP" : {
+        "done" : true,
+        "project" : "-KDH-kM1HUCJxzapXPxO",
+        "text" : "Create repo",
+        "timestamp" : 1458443611911
+      },
+      "-KDH-sQFH6GabFFbn5zf" : {
+        "done" : true,
+        "project" : "-KDH-kM1HUCJxzapXPxO",
+        "text" : "Readme",
+        "timestamp" : 1458443618060
+      },
+      "-KDH-vhcJL6R-oUym2Mj" : {
+        "done" : true,
+        "project" : "-KDH-kM1HUCJxzapXPxO",
+        "text" : "Set up configuration (webpack)",
+        "timestamp" : 1458443631524
+      },
+      "-KDH04mGIOK5tyNrGihz" : {
+        "done" : true,
+        "project" : "-KDH-kM1HUCJxzapXPxO",
+        "text" : "Step 1: hello world",
+        "timestamp" : 1458443672782
+      },
+      "-KDH07s0fzfNBGNhKgm4" : {
+        "done" : false,
+        "project" : "-KDH-kM1HUCJxzapXPxO",
+        "text" : "Step 2: get data and show it",
+        "timestamp" : 1458443685434
+      },
+      "-KDH5D_6NmwjyYi3xkhi" : {
+        "done" : false,
+        "project" : "-KDH-kM1HUCJxzapXPxO",
+        "text" : "Step 3: submit data through a form",
+        "timestamp" : 1458445019539
+      },
+      "-KDH5M8_D0h1CJFifJ5m" : {
+        "done" : false,
+        "project" : "-KDH-kM1HUCJxzapXPxO",
+        "text" : "Step 4: refactor",
+        "timestamp" : 1458445054638
+      },
+      "-KDH6_OVAPdsxH9hij_M" : {
+        "done" : false,
+        "project" : "-KDH-kM1HUCJxzapXPxO",
+        "text" : "Setup data in firebase",
+        "timestamp" : 1458445375140
+      },
+      "-KDK-EVFEGNYksWULjV_" : {
+        "done" : false,
+        "project" : "-KDH-kM1HUCJxzapXPxO",
+        "text" : "User stories",
+        "timestamp" : 1458493782099
+      }
+    }
+  }
+}

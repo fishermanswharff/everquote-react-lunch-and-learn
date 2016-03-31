@@ -1,4 +1,6 @@
 import React from 'react';
+import Menu from './menu.jsx';
+import Firebase from 'firebase';
 
 export default class TodoApp extends React.Component {
   constructor(props){
@@ -6,6 +8,8 @@ export default class TodoApp extends React.Component {
 
     // instead of getInitialState() we set the initial state in the constructor
     this.state = {};
+
+    this.handleMenuClicked = this.handleMenuClicked.bind(this);
   }
 
   // Lifecycle methods
@@ -48,6 +52,7 @@ export default class TodoApp extends React.Component {
       being received. This method is not called for the
       initial render or when forceUpdate is used.
     */
+    return true;
   }
 
   componentWillUpdate(){
@@ -73,11 +78,15 @@ export default class TodoApp extends React.Component {
     */
   }
 
+  handleMenuClicked(e) {
+    console.log('clicked the menu', e);
+  }
+
   // turns your javascript into html
   render(){
     return(
-      <div id='todoApp'>
-        <p>Hello World!</p>
+      <div className='todo-app'>
+        <Menu onListClicked={this.handleMenuClicked} />
       </div>
     )
   }
