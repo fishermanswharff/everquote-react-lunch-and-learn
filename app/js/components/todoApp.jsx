@@ -85,7 +85,7 @@ export default class TodoApp extends React.Component {
   // turns your javascript into html
   render(){
     return(
-      <div className='todo-app'>
+      <div className='todo-app-main-container'>
         <Menu onListClicked={this.handleMenuClicked} />
       </div>
     )
