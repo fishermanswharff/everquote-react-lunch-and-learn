@@ -20,11 +20,27 @@ $ npm install
 $ gulp serve
 ```
 
+**Helpful but not required**
+[React Dev Tools][react-chrome-tools]: Chrome extension provides a devTool for exploring/debugging your react components
+[Vulcan by Firebase][firebase-vulcan]: Chrome extension allows you to view and manipulate your firebase data
+
 # Step 1: Hello World
 
+1. `import`ing your modules
+1. rendering your first component
+1. component lifecycle
+1. passing props from parents to children
+1. thinking in react
+  * Step 1: break the UI into a component hierarchy
+  * Step 2: Build a static version in React
+  * Step 3: Identify the minimal (but complete) representation of UI state
+  * Step 4: Identify where your state should live
 
+# Step 2: Retreiving and displaying data
 
-
+1. Getting data from firebase at the appropriate time in the component lifecycle
+1. `setState()` on the component
+1. passing props from children to parents
 
 # Helpful links:
 
@@ -46,3 +62,5 @@ $ gulp serve
 [gulp-getting-started]: https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md
 [node-download]: https://nodejs.org/en/download/
 [mdn-es6-promises]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise
+[react-chrome-tools]: https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en
+[firebase-vulcan]: https://chrome.google.com/webstore/detail/vulcan-by-firebase/oippbnlmebalopjbkemajgfbglcjhnbl?hl=en
