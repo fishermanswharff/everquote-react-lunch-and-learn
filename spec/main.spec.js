@@ -33,10 +33,6 @@ describe('TodoApp', () => {
     expect(menu).toBeDefined();
   });
 
-  it('responds to authEvents', () => {
-    // ??
-  });
-
   afterEach(() => {
     // do some teardown
   });
