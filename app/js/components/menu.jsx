@@ -19,15 +19,16 @@ export default class Menu extends React.Component {
     var data = [];
     let ref = new Firebase('https://vivid-inferno-6426.firebaseio.com/lists');
     ref.on('value', (snapshot) => {
+      console.log(snapshot.val());
       var listsObj = snapshot.val();
       for(var i in listsObj)
         data.push({key: i, value: listsObj[i]});
       this.setState({ lists: data });
-      console.log(data);
     });
   }
 
   componentDidMount(){
+    console.log(this, this.props);
     this.loadListsFromServer();
   }
 
@@ -41,6 +42,7 @@ export default class Menu extends React.Component {
 
 
   render() {
+    console.log(this.state);
     return(
       <div onClick={this.handleClick}>
         <section>
@@ -55,5 +57,6 @@ export default class Menu extends React.Component {
 
 Menu.propTypes = {
   items: React.PropTypes.array,
-  onListClicked: React.PropTypes.func
+  onListClicked: React.PropTypes.func,
+  myFirstProp: React.PropTypes.string
 }

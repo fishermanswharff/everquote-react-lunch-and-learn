@@ -13,11 +13,15 @@ export default class MenuItem extends React.Component {
   getChildren(){
     let ref = new Firebase(`https://vivid-inferno-6426.firebaseio.com/todos/${this.props.firebaseKey}`);
     ref.once('value', (datasnapshot) => {
-      this.setState({numTasks: datasnapshot.numChildren()});
+      var count = 0;
+      var tasks = datasnapshot.val();
+      for(var i in tasks)
+        if(!tasks[i].done) count++;
+      this.setState({numTasks: count});
     });
-    this.forceUpdate();
   }
 
+  // not necessary yet
   componentDidUpdate(prevProps){
     if(prevProps.authData !== this.props.authData){
       this.getChildren();
@@ -30,7 +34,7 @@ export default class MenuItem extends React.Component {
 
   render() {
     return (
-      <li key={this.props.data.name}>{this.props.data.name} | {this.state.numTasks}</li>
+      <li key={this.props.data.name}>{this.props.data.name} | {this.state.numTasks} todos</li>
     )
   }
 }

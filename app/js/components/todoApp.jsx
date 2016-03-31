@@ -1,5 +1,6 @@
 import React from 'react';
 import Menu from './menu.jsx';
+import NewListForm from './newListForm.jsx';
 import Firebase from 'firebase';
 
 export default class TodoApp extends React.Component {
@@ -86,7 +87,8 @@ export default class TodoApp extends React.Component {
   render(){
     return(
       <div className='todo-app-main-container'>
-        <Menu onListClicked={this.handleMenuClicked} />
+        <Menu myFirstProp='hello world' onListClicked={this.handleMenuClicked} />
+        <NewListForm />
       </div>
     )
   }
