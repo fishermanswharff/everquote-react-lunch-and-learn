@@ -1,6 +1,7 @@
 import React from 'react';
 import { render } from 'react-dom';
 import MenuItem from './menuItem.jsx';
+import Firebase from 'firebase';
 
 export default class Menu extends React.Component {
 

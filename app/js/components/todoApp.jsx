@@ -1,11 +1,32 @@
 import React from 'react';
 import Menu from './menu.jsx';
 import NewListForm from './newListForm.jsx';
-import Firebase from 'firebase';
+
+// import BaseComponent from './base.jsx';
+/*
+
+  JASON NOTES:
+  ———————————————————————————————————
+  On Step 4: Routes
+  write the routes file
+
+  On refactor import BaseComponent and update inheritance
+  comment out the bind() calls
+
+  build out a Firebase module, import it, then use that instead of making all the new calls
+    methods you'll need:
+      get()
+      post()
+*/
 
 export default class TodoApp extends React.Component {
-  constructor(props){
-    super(props);
+
+  // every class needs a constructor method.
+  // 
+  // JASON NOTE: context should be passed in on Step 4
+  constructor(props, context){
+    // invoke the React construction for props
+    super(props, context);
 
     // instead of getInitialState() we set the initial state in the constructor
     this.state = {};
@@ -86,10 +107,25 @@ export default class TodoApp extends React.Component {
   // turns your javascript into html
   render(){
     return(
-      <div className='todo-app-main-container'>
+      <div id='todo-app' className='todo-app-main-container'>
         <Menu myFirstProp='hello world' onListClicked={this.handleMenuClicked} />
         <NewListForm />
+
+        {this.props.children}
       </div>
     )
   }
 }
+
+TodoApp.propTypes = {
+  stringProperty: React.PropTypes.string
+}
+
+TodoApp.defaultProps = {
+  stringProperty: 'hello world'
+}
+
+TodoApp.contextTypes = {
+  router: React.PropTypes.object.isRequired
+}
+
