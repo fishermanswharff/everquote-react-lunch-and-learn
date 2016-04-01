@@ -22,6 +22,7 @@ $ gulp serve
 
 **Helpful but not required**
 [React Dev Tools][react-chrome-tools]: Chrome extension provides a devTool for exploring/debugging your react components
+
 [Vulcan by Firebase][firebase-vulcan]: Chrome extension allows you to view and manipulate your firebase data
 
 # Step 1: Hello World
@@ -36,11 +37,30 @@ $ gulp serve
   * Step 3: Identify the minimal (but complete) representation of UI state
   * Step 4: Identify where your state should live
 
-# Step 2: Retreiving and displaying data
+# Step 2: Retrieving and displaying data
 
 1. Getting data from firebase at the appropriate time in the component lifecycle
 1. `setState()` on the component
 1. passing props from children to parents
+
+# Step 3: Posting data through a form
+
+1. Build a form in react
+1. Post data to the Firebase endpoint
+1. Update the UI when the data changes
+
+# Step 4: Routing
+
+1. setting up the routes
+1. wiring things up
+1. Rendering our first routes
+1. classnames
+
+# Step 5: Refactoring
+
+1. Firebase module
+1. Base Component
+
 
 # Helpful links:
 
@@ -52,6 +72,7 @@ $ gulp serve
 * [Jasmine Docs][jasmine-docs]
 * [Beginner’s Guide to Webpack][webpack-medium-post]
 * [Gulp: Getting Started][gulp-getting-started]
+* [Refactoring React Components to ES6 Classes][refactoring-react-es6]
 
 [mdn-es6-classes]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes
 [react-home-link]: https://facebook.github.io/react/index.html
@@ -64,3 +85,4 @@ $ gulp serve
 [mdn-es6-promises]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise
 [react-chrome-tools]: https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en
 [firebase-vulcan]: https://chrome.google.com/webstore/detail/vulcan-by-firebase/oippbnlmebalopjbkemajgfbglcjhnbl?hl=en
+[refactoring-react-es6]: http://www.newmediacampaigns.com/blog/refactoring-react-components-to-es6-classes
