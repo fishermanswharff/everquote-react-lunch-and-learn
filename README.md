@@ -21,9 +21,8 @@ $ gulp serve
 ```
 
 **Helpful but not required**
-[React Dev Tools][react-chrome-tools]: Chrome extension provides a devTool for exploring/debugging your react components
-
-[Vulcan by Firebase][firebase-vulcan]: Chrome extension allows you to view and manipulate your firebase data
+* [React Dev Tools][react-chrome-tools]: Chrome extension provides a devTool for exploring/debugging your react components
+* [Vulcan by Firebase][firebase-vulcan]: Chrome extension allows you to view and manipulate your firebase data
 
 # Step 1: Hello World
 
@@ -66,6 +65,7 @@ $ gulp serve
 
 * [MDN Javascript Classes documentation][mdn-es6-classes]
 * [MDN ES6 Promises][mdn-es6-promises]
+* [MDN ES6 Rest Parameters][mdn-es6-restparams]
 * [React Homepage][react-home-link]
 * [React Docs][react-docs-link]
 * [Firebase Docs][firebase-js-docs]
@@ -86,3 +86,4 @@ $ gulp serve
 [react-chrome-tools]: https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en
 [firebase-vulcan]: https://chrome.google.com/webstore/detail/vulcan-by-firebase/oippbnlmebalopjbkemajgfbglcjhnbl?hl=en
 [refactoring-react-es6]: http://www.newmediacampaigns.com/blog/refactoring-react-components-to-es6-classes
+[mdn-es6-restparams]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters
