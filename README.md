@@ -37,12 +37,11 @@ $ gulp serve
   * Step 3: Identify the minimal (but complete) representation of UI state
   * Step 4: Identify where your state should live
 
-# Step 2: Retreiving and displaying data
+# Step 2: Retrieving and displaying data
 
 1. Getting data from firebase at the appropriate time in the component lifecycle
 1. `setState()` on the component
 1. passing props from children to parents
-1. classnames
 
 # Step 3: Posting data through a form
 
@@ -55,6 +54,7 @@ $ gulp serve
 1. setting up the routes
 1. wiring things up
 1. Rendering our first routes
+1. classnames
 
 # Step 5: Refactoring
 

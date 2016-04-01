@@ -7,9 +7,37 @@ import NewListForm from './newListForm.jsx';
 
   JASON NOTES:
   ———————————————————————————————————
-  On Step 4: Routes
-  write the routes file
 
+  Step 1: Hello World
+  ———————————————————————————————————
+  import react
+  write app.jsx
+  write todoApp.jsx
+
+  Step 2: Retrieving/Displaying Data
+  ———————————————————————————————————
+  write menu.jsx
+  write menuitem.jsx
+  get data from firebase
+  set state
+  pass props from children to parents
+
+  Step 3: Posting data
+  ———————————————————————————————————
+  Build newListForm
+  render it in todoapp
+  
+
+  On Step 4: Routes
+  ———————————————————————————————————
+  write the routes file
+  import them into the app.jsx
+  build the todoList component
+  build the todolistitem component
+  setup classnames
+
+  On Step 5: Refactor
+  ———————————————————————————————————
   On refactor import BaseComponent and update inheritance
   comment out the bind() calls
 
@@ -19,10 +47,11 @@ import NewListForm from './newListForm.jsx';
       post()
 */
 
+
 export default class TodoApp extends React.Component {
 
   // every class needs a constructor method.
-  // 
+  //
   // JASON NOTE: context should be passed in on Step 4
   constructor(props, context){
     // invoke the React construction for props
@@ -104,13 +133,12 @@ export default class TodoApp extends React.Component {
     console.log('clicked the menu', e);
   }
 
-  // turns your javascript into html
+  // turns your javascript/jsx into html
   render(){
     return(
       <div id='todo-app' className='todo-app-main-container'>
         <Menu myFirstProp='hello world' onListClicked={this.handleMenuClicked} />
         <NewListForm />
-
         {this.props.children}
       </div>
     )
