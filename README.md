@@ -17,6 +17,7 @@ $ npm -v
 $ git clone git@github.com:fishermanswharff/everquote-react-lunch-and-learn.git
 $ cd everquote-react-lunch-and-learn
 $ npm install
+$ npm install -g gulp-cli
 $ gulp serve
 ```
 
