@@ -1,5 +1,6 @@
 import React from 'react';
 import Firebase from 'firebase';
+import { Link } from 'react-router';
 
 export default class MenuItem extends React.Component {
   constructor(props){
@@ -29,7 +30,9 @@ export default class MenuItem extends React.Component {
   render(){
     return (
       <li key={this.props.data.name}>
-        <a>{this.props.data.name}</a>
+        <Link activeClassName='active' to={`/lists/${this.props.firebaseKey}`} >
+          {this.props.data.name}
+        </Link>
         <span>{this.state.numTasks}</span>
       </li>
     )

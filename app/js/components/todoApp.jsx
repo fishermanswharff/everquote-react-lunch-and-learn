@@ -23,6 +23,7 @@ export default class TodoApp extends BaseComponent {
       <div id='todo-app' className='todo-app-main-container'>
         <Menu onListClicked={this.handleMenuClicked}/>
         <NewListForm />
+        {this.props.children}
       </div>
     )
   }
