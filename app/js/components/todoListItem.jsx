@@ -26,6 +26,20 @@ export default class TodoListItem extends BaseComponent {
     doneRef.set(!this.state.done, this.onItemDoneUpdate);
   }
 
+  convertTimestamp(timestamp){
+    var date = new Date(timestamp);
+    var hours = date.getHours();
+    var minutes = date.getMinutes();
+    var day = date.getDate();
+    var month = date.getMonth() + 1;
+    var year = date.getFullYear();
+    if(minutes < 10){
+      var string = '0' + minutes;
+      minutes = string;
+    }
+    return hours + ':' + minutes + ' ' + month + '/' + day;
+  }
+
   onItemDoneUpdate(error){
     if(error){
       this.setState({ ajaxFail: true });
