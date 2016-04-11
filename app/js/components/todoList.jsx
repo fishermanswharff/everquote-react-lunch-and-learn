@@ -27,6 +27,12 @@ export default class TodoList extends BaseComponent {
     this.loadListsFromServer();
   }
 
+  componentDidUpdate(prevProps){
+    let oldId = prevProps.params.listId;
+    let newId = this.props.params.listId;
+    if(newId !== oldId) this.loadListsFromServer();
+  }
+
   createItem(object, index, array){
     return <TodoListItem key={object.key} data={object.item} id={object.key} />
   }
