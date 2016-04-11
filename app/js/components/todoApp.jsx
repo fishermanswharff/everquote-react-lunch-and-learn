@@ -4,8 +4,8 @@ import Menu from './menu.jsx';
 import NewListForm from './newListForm.jsx';
 
 export default class TodoApp extends BaseComponent {
-  constructor(props){
-    super(props);
+  constructor(props, context){
+    super(props, context);
     this.state = {
       message: 'hello world'
     }
@@ -27,4 +27,8 @@ export default class TodoApp extends BaseComponent {
       </div>
     )
   }
+}
+
+TodoApp.contextTypes = {
+  router: React.PropTypes.object.isRequired
 }
